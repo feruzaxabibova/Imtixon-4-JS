@@ -8,7 +8,7 @@ const comment = function () {
         let elComment = elCommentTemplate.cloneNode(true);
 
         elComment.querySelector(".js-comment__title").textContent = `${obj.name}`;
-        elComment.querySelector(".js-comment__email").href = `${obj.email}`;
+        elComment.querySelector(".js-comment__email").href = `mailto:${obj.email}`;
         elComment.querySelector(".js-comment__email").textContent = `${obj.email}`;
         elComment.querySelector(".js-comment__body").textContent = `${obj.body}`;
 
