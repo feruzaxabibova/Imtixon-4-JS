@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exam</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1 class="text-center">User reviews</h1>
+        <div class="row mt-2 ">
+            <ul class="col-4 list-unstyled js-user"></ul>
+            <ul class="col-4 list-unstyled js-post"></ul>
+            <ul class="col-4 list-unstyled js-comment"></ul>
+        </div>
+    </div>  
+    <!-- CONTAINER END -->
+
+
+    <!-- USER TEMPLATE -->
+    <template id="user-template">
+        <li class="border border-1 rounded bg-light mb-2 p-2 js-user__item">
+            <span class="js-user__id"></span>
+            <h3 class="text-center js-user__name"></h3>
+            <div class="text-center text-primary my-2">
+                <a class="text-decoration-none mx-2 fst-italic js-user__email"></a>
+            </div>
+            <address class="text-center text-secondary js-user-address"></address>
+            <button class="btn btn-danger w-25 d-flex justify-content-center m-auto mb-2 js-btn__post">read post</button>
+        </li>
+    </template>
+
+     <!-- POSTS TEMPLATE -->
+    <template id="post-template">
+        <li class="border border-1 rounded bg-light mb-2 p-2 js-post__item">
+            <span class="js-post__id"></span>
+            <h3 class="js-post__title"></h3>
+            <p class="fst-italic text-secondary js-post__body"></p>
+            <button class="js-btn__comment btn btn-secondary">read commit</button>
+        </li>
+    </template>
+
+     <!-- COMMENTS TEMPLATE -->
+    <template id="comment-template">
+        <li class="border border-1 rounded bg-light mb-2 p-2 js-comment__item">
+            <span class="js-comment__id"></span>
+            <h3 class="js-comment__title"></h3>
+            <a class="text-decoration-none fst-italic js-comment__email"></a>
+            <p class="fst-italic text-secondary js-comment__body"></p>
+        </li>
+    </template>
+
+    <script src="./js/comments.js"></script>
+    <script src="./js/post.js"></script>
+    <script src="./js/user.js"></script>
+</body>
+
+</html>
